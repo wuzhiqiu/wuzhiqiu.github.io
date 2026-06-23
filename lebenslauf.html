@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lebenslauf – Zeqiu Wu</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .cv-container {
+      max-width: 860px;
+      margin: 40px auto;
+      background: white;
+      padding: 50px 60px;
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    .cv-back {
+      display: inline-block;
+      margin: 30px 40px 0;
+      color: #2c3e50;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .cv-back:hover {
+      text-decoration: underline;
+    }
+
+    #lang-toggle {
+      position: fixed;
+      top: 20px;
+      right: 24px;
+      padding: 8px 18px;
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      z-index: 100;
+    }
+
+    #lang-toggle:hover {
+      background-color: #1a252f;
+    }
+
+    .cv-container h1 {
+      font-size: 32px;
+      margin-bottom: 4px;
+      text-align: center;
+    }
+
+    .cv-container h2 {
+      font-size: 18px;
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 4px;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      text-align: left;
+      width: 100%;
+    }
+
+    .cv-container p {
+      line-height: 1.7;
+      margin: 8px 0;
+    }
+
+    .cv-container ul {
+      margin: 6px 0 6px 20px;
+      padding: 0;
+    }
+
+    .cv-container ul li {
+      margin-bottom: 4px;
+      line-height: 1.6;
+    }
+
+    .cv-container table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+    }
+
+    .cv-container table td {
+      padding: 5px 10px;
+      vertical-align: top;
+    }
+
+    .cv-container table td:first-child {
+      white-space: nowrap;
+      font-weight: bold;
+      width: 180px;
+    }
+
+    .cv-skills td {
+      width: 25%;
+    }
+
+    .cv-skills td:nth-child(odd) {
+      font-weight: bold;
+    }
+
+    .cv-skills td:nth-child(even) {
+      color: #555;
+    }
+
+    .cv-lang td:first-child {
+      width: 160px;
+    }
+
+    .job-title {
+      font-weight: bold;
+      margin-top: 14px;
+      margin-bottom: 4px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 20px 0;
+    }
+
+    .profile-photo {
+      float: right;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      width: 140px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="lang-toggle" onclick="toggleLang()">🌐 English</button>
+  <a href="index.html" class="cv-back">← Back to Portfolio</a>
+
+  <div class="cv-container">
+    <h1>LEBENSLAUF</h1>
+
+    <!-- ========== GERMAN ========== -->
+    <div id="lang-de">
+
+      <!-- Berufsprofil -->
+      <h2>Berufsprofil</h2>
+      <img src="images/ID_photos.png" alt="ID Photo" class="profile-photo">
+      <p>Automotive Software Ingenieur mit 3+ Jahren Erfahrung in der Absicherung sicherheitskritischer Fahrzeugfunktionen (RDC/TPMS, IBS) an HiL-Prüfständen mit dSPACE und CANoe. M.Sc. Automatisierungstechnik (TU Kaiserslautern), Schwerpunkt <strong>Regelungstechnik</strong>, <strong>Robotik</strong> und <strong>Maschinelles Lernen</strong>. Eigenständig entwickelte Python/PyQt6-Desktopanwendung zur Echtzeit-Überwachung der ECU-Gesundheit via CAN-Bus – reduziert den manuellen Diagnoseaufwand im Validierungsprozess.</p>
+      <div style="clear:both;"></div>
+
+      <hr>
+
+      <!-- Berufserfahrung -->
+      <h2>Berufserfahrung</h2>
+      <p class="job-title">06.2022 – heute — Application Software Ingenieur, Way Engineering GmbH</p>
+      <ul>
+        <li>Verifiziert und sichert RDC- (TPMS) und IBS-Funktionen an HiL-Prüfständen mit dSPACE und CANoe gemäß Anforderungsspezifikation ab</li>
+        <li>Spezifiziert, implementiert und pflegt Testfälle in Python, führt systematische Regressionstests nach ECU-Software-Updates durch</li>
+        <li>Analysiert Testergebnisse, identifiziert Fehlerursachen und koordiniert Rückmeldungen mit dem Entwicklungsteam</li>
+        <li>Entwickelt eigenständig eine Python/PyQt6-Desktop-Anwendung zur Echtzeit-Überwachung der ECU-Gesundheit via CAN-Bus (Vector XL / PCAN); unterstützt die Wiedergabe von MF4/BLF-Logdateien aus CANoe/CANape</li>
+      </ul>
+
+      <hr>
+
+      <!-- IT-Kenntnisse -->
+      <h2>IT-Kenntnisse</h2>
+      <table class="cv-skills">
+        <tr>
+          <td>dSPACE</td><td>Sehr gut</td>
+          <td>CANoe / CANape</td><td>Sehr gut</td>
+        </tr>
+        <tr>
+          <td>Python</td><td>Gut</td>
+          <td>C++</td><td>Gut</td>
+        </tr>
+        <tr>
+          <td>Matlab / Simulink</td><td>Gut</td>
+          <td>ROS2</td><td>Gut</td>
+        </tr>
+        <tr>
+          <td>Linux</td><td>Gut</td>
+          <td>Git</td><td>Gut</td>
+        </tr>
+      </table>
+
+      <hr>
+
+      <!-- Studium -->
+      <h2>Studium</h2>
+      <p class="job-title">09.2017 – 10.2021 — TU Kaiserslautern, Kaiserslautern</p>
+      <ul>
+        <li>Studiengang: Automatisierungstechnik (M.Sc.)</li>
+        <li>Abschlussnote: 2,3</li>
+        <li>Schwerpunkte: Regelungstechnik, Automation, Robotik, Maschinelles Lernen</li>
+      </ul>
+      <p class="job-title">09.2012 – 06.2016 — Tongji-Universität, Shanghai</p>
+      <ul>
+        <li>Studiengang: Automatisierungstechnik (B.Eng.)</li>
+        <li>Abschlussnote: 81,53 / 100</li>
+      </ul>
+      <p class="job-title">09.2012 – 06.2014 — Tongji-Universität, Shanghai</p>
+      <ul>
+        <li>Zusatzfach: Mathematik</li>
+      </ul>
+
+      <hr>
+
+      <!-- Akademische Projekte -->
+      <h2>Akademische Projekte</h2>
+      <p class="job-title">03.2021 – 10.2021 — Masterarbeit: "A Nonlinear MPC for Trajectory Following of Highly Automated Vehicles"</p>
+      <p><em>Lehrstuhl für Mechatronik, TU Kaiserslautern</em></p>
+      <ul>
+        <li>Entwickelt ein nichtlineares Model-Predictive-Control (MPC)-Konzept für die Trajektorienfolge hochautomatisierter Fahrzeuge</li>
+        <li>Implementiert ein Einspurmodell mit gekoppelter Quer- und Längsregelung in MATLAB/Simulink</li>
+        <li>Validiert den Regelungsansatz in Simulationsumgebungen unter verschiedenen Fahrdynamikszenarien</li>
+      </ul>
+      <p class="job-title">07.2020 – 11.2020 — Masterprojekt: "Artifacts Analysis Based on Machine Learning in X-ray Images of Food Samples"</p>
+      <p><em>Lehrstuhl für Kognitive Integrierte Sensorsysteme, TU Kaiserslautern</em></p>
+      <ul>
+        <li>Implementiert und vergleicht AlexNet und YOLO v5 in PyTorch zur automatischen Artefakt-Erkennung in Röntgenbildern</li>
+        <li>Evaluiert Gabor-Filter als Feature-Extraktoren im Vorverarbeitungsschritt</li>
+        <li>Erzielt signifikante Verbesserung der Erkennungsrate durch Kombination klassischer und Deep-Learning-Methoden</li>
+      </ul>
+
+      <hr>
+
+      <!-- Praktika -->
+      <h2>Praktika</h2>
+      <p class="job-title">06.2021 – 02.2022 — Wissenschaftliche Hilfskraft (HiWi), Projekt "Reliability and Timeliness in Communication Control Codesign (RTC³)"</p>
+      <p><em>Lehrstuhl für Funkkommunikation und Navigation, TU Kaiserslautern</em></p>
+      <ul>
+        <li>Modelliert und analysiert das Inverse-Pendel-System als Benchmarkproblem für drahtlose Regelungsarchitekturen in MATLAB/Simulink</li>
+        <li>Untersucht den Einfluss stochastischer Störungen und Kommunikationsverluste auf die Regelstabilität</li>
+        <li>Bewertet Stabilitätsgrenzen unter variierenden Netzwerkbedingungen</li>
+      </ul>
+
+      <hr>
+
+      <!-- Auszeichnungen & Preise -->
+      <h2>Auszeichnungen &amp; Preise</h2>
+      <p><strong>12.2024 — Bester Kunde des Jahres</strong>, ARRK Engineering</p>
+      <p><strong>01.2015 — Honorable Mention</strong>, "Synthesized Indicator Evaluating System Model of the Sustainable Development"<br>
+      — Interdisciplinary Contest in Modeling (MCM/ICM)</p>
+
+      <hr>
+
+      <!-- Fremdsprachen -->
+      <h2>Fremdsprachen</h2>
+      <table class="cv-lang">
+        <tr><td>Chinesisch</td><td>Muttersprache</td></tr>
+        <tr><td>Englisch</td><td>Gut (C1)</td></tr>
+        <tr><td>Deutsch</td><td>Gut (B2)</td></tr>
+      </table>
+
+    </div>
+    <!-- ========== END GERMAN ========== -->
+
+    <!-- ========== ENGLISH ========== -->
+    <div id="lang-en" style="display:none">
+
+      <!-- Professional Profile -->
+      <h2>Professional Profile</h2>
+      <img src="images/ID_photos.png" alt="ID Photo" class="profile-photo">
+      <p>Automotive Software Engineer with 3+ years validating safety-critical vehicle functions (RDC/TPMS, IBS) at HiL test benches using dSPACE and CANoe. M.Sc. Automation Technology (TU Kaiserslautern), specialising in <strong>control engineering</strong>, <strong>robotics</strong>, and <strong>machine learning</strong>. Independently built a Python/PyQt6 tool for real-time ECU health monitoring via CAN-Bus, reducing manual diagnostic effort in the validation cycle.</p>
+      <div style="clear:both;"></div>
+
+      <hr>
+
+      <!-- Professional Experience -->
+      <h2>Professional Experience</h2>
+      <p class="job-title">06.2022 – present — Application Software Engineer, Way Engineering GmbH</p>
+      <ul>
+        <li>Verifies and validates RDC (TPMS) and IBS functions at HiL test benches using dSPACE and CANoe in accordance with requirements specifications</li>
+        <li>Specifies, implements, and maintains test cases in Python, conducts systematic regression testing after ECU software updates</li>
+        <li>Analyses test results, identifies root causes, and coordinates feedback with the development team</li>
+        <li>Independently developed a Python/PyQt6 desktop application for real-time ECU health monitoring via CAN-Bus (Vector XL / PCAN); supports playback of MF4/BLF log files from CANoe/CANape</li>
+      </ul>
+
+      <hr>
+
+      <!-- IT Skills -->
+      <h2>IT Skills</h2>
+      <table class="cv-skills">
+        <tr>
+          <td>dSPACE</td><td>Excellent</td>
+          <td>CANoe / CANape</td><td>Excellent</td>
+        </tr>
+        <tr>
+          <td>Python</td><td>Good</td>
+          <td>C++</td><td>Good</td>
+        </tr>
+        <tr>
+          <td>Matlab / Simulink</td><td>Good</td>
+          <td>ROS2</td><td>Good</td>
+        </tr>
+        <tr>
+          <td>Linux</td><td>Good</td>
+          <td>Git</td><td>Good</td>
+        </tr>
+      </table>
+
+      <hr>
+
+      <!-- Education -->
+      <h2>Education</h2>
+      <p class="job-title">09.2017 – 10.2021 — TU Kaiserslautern, Kaiserslautern</p>
+      <ul>
+        <li>Programme: Automation Technology (M.Sc.)</li>
+        <li>Final Grade: 2.3</li>
+        <li>Focus Areas: Control Engineering, Automation, Robotics, Machine Learning</li>
+      </ul>
+      <p class="job-title">09.2012 – 06.2016 — Tongji University, Shanghai</p>
+      <ul>
+        <li>Programme: Automation Technology (B.Eng.)</li>
+        <li>Final Grade: 81.53 / 100</li>
+      </ul>
+      <p class="job-title">09.2012 – 06.2014 — Tongji University, Shanghai</p>
+      <ul>
+        <li>Minor: Mathematics</li>
+      </ul>
+
+      <hr>
+
+      <!-- Academic Projects -->
+      <h2>Academic Projects</h2>
+      <p class="job-title">03.2021 – 10.2021 — Master's Thesis: "A Nonlinear MPC for Trajectory Following of Highly Automated Vehicles"</p>
+      <p><em>Chair of Mechatronics, TU Kaiserslautern</em></p>
+      <ul>
+        <li>Developed a nonlinear Model Predictive Control (MPC) concept for trajectory following of highly automated vehicles</li>
+        <li>Implemented a single-track model with coupled lateral and longitudinal control in MATLAB/Simulink</li>
+        <li>Validated the control approach in simulation environments under various vehicle dynamics scenarios</li>
+      </ul>
+      <p class="job-title">07.2020 – 11.2020 — Master's Project: "Artifacts Analysis Based on Machine Learning in X-ray Images of Food Samples"</p>
+      <p><em>Chair of Cognitive Integrated Sensor Systems, TU Kaiserslautern</em></p>
+      <ul>
+        <li>Implemented and compared AlexNet and YOLO v5 in PyTorch for automatic artifact detection in X-ray images</li>
+        <li>Evaluated Gabor filters as feature extractors in the preprocessing step</li>
+        <li>Achieved significant improvement in detection rate by combining classical and deep learning methods</li>
+      </ul>
+
+      <hr>
+
+      <!-- Internships -->
+      <h2>Internships</h2>
+      <p class="job-title">06.2021 – 02.2022 — Student Research Assistant (HiWi), Project "Reliability and Timeliness in Communication Control Codesign (RTC³)"</p>
+      <p><em>Chair of Radio Communications and Navigation, TU Kaiserslautern</em></p>
+      <ul>
+        <li>Modelled and analysed the inverted pendulum system as a benchmark problem for wireless control architectures in MATLAB/Simulink</li>
+        <li>Investigated the influence of stochastic disturbances and communication losses on control stability</li>
+        <li>Evaluated stability limits under varying network conditions</li>
+      </ul>
+
+      <hr>
+
+      <!-- Awards & Prizes -->
+      <h2>Awards &amp; Prizes</h2>
+      <p><strong>12.2024 — Best Customer of the Year</strong>, ARRK Engineering</p>
+      <p><strong>01.2015 — Honorable Mention</strong>, "Synthesized Indicator Evaluating System Model of the Sustainable Development"<br>
+      — Interdisciplinary Contest in Modeling (MCM/ICM)</p>
+
+      <hr>
+
+      <!-- Languages -->
+      <h2>Languages</h2>
+      <table class="cv-lang">
+        <tr><td>Chinese</td><td>Native</td></tr>
+        <tr><td>English</td><td>Good (C1)</td></tr>
+        <tr><td>German</td><td>Good (B2)</td></tr>
+      </table>
+
+    </div>
+    <!-- ========== END ENGLISH ========== -->
+
+  </div>
+
+  <script>
+    let lang = 'de';
+    function toggleLang() {
+      lang = lang === 'de' ? 'en' : 'de';
+      document.getElementById('lang-de').style.display = lang === 'de' ? '' : 'none';
+      document.getElementById('lang-en').style.display = lang === 'en' ? '' : 'none';
+      document.getElementById('lang-toggle').textContent =
+        lang === 'de' ? '🌐 English' : '🌐 Deutsch';
+    }
+  </script>
+
+</body>
+
+</html>
